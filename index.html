@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casolare Vita Lenta</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdf6f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8b5e3c;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #e8d4c1;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #8b5e3c;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #8b5e3c;
+            border-bottom: 2px solid #8b5e3c;
+            padding-bottom: 5px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        footer {
+            background-color: #8b5e3c;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #8b5e3c;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #a27151;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Casolare Vita Lenta</h1>
+    <p>Rallenta, respira e rigenerati nel cuore delle Marche</p>
+</header>
+
+<nav>
+    <a href="#casa">La Casa</a>
+    <a href="#dintorni">Dintorni</a>
+    <a href="#prenota">Prenota</a>
+    <a href="#contatti">Contatti</a>
+</nav>
+
+<section id="casa">
+    <h2>La Casa</h2>
+    <p>Immersa nel verde delle colline marchigiane, la casa offre tre camere matrimoniali, un divano letto, due bagni, cucina completamente attrezzata, terrazza panoramica e un ampio giardino esterno. Ideale per famiglie, coppie o gruppi in cerca di relax e privacy.</p>
+    <div class="flex gallery">
+        <img src="https://via.placeholder.com/400x300?text=Camera+1" alt="Camera 1">
+        <img src="https://via.placeholder.com/400x300?text=Camera+2" alt="Camera 2">
+        <img src="https://via.placeholder.com/400x300?text=Giardino" alt="Giardino">
+    </div>
+</section>
+
+<section id="dintorni">
+    <h2>Dintorni</h2>
+    <p>La struttura è a pochi minuti dal centro di Petriolo, dalla Riserva Naturale dell’Abbadia di Fiastra, dal mare di Civitanova Marche e dal Parco Nazionale del Conero. Ideale per escursioni, trekking, mare e cultura locale.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.0000000000005!2d13.123456!3d43.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xabcdef!2sVia+Castelletta+8%2C+Petriolo+MC!5e0!3m2!1sit!2sit!4v0000000000000" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section id="prenota">
+    <h2>Prenota</h2>
+    <form action="https://formspree.io/f/mwkayrqn" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="ospiti" placeholder="Numero ospiti" required>
+        <input type="date" name="arrivo" placeholder="Data arrivo" required>
+        <input type="date" name="partenza" placeholder="Data partenza" required>
+        <textarea name="messaggio" placeholder="Messaggio" rows="4"></textarea>
+        <button type="submit">Invia richiesta</button>
+    </form>
+</section>
+
+<section id="contatti">
+    <h2>Contatti</h2>
+    <p>Indirizzo: Via Castelletta, 8, Petriolo (MC) 62014</p>
+    <p>Email: lucaacc98@gmail.com</p>
+    <p>Telefono: +39 339 5048269</p>
+</section>
+
+<footer>
+    <p>© 2026 Casolare Vita Lenta – Tutti i diritti riservati</p>
+</footer>
+
+</body>
+</html>
